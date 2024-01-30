@@ -6,7 +6,7 @@
 
 Pour installer Angular, vous aurez besoin d'avoir Node.js et npm (gestionnaire de paquets Node) installés sur votre ordinateur. Une fois que ces prérequis sont installés, vous pouvez utiliser npm pour installer Angular en utilisant la commande suivante :
 
-```npm install -g @angular/cli```
+```sudo npm install -g @angular/cli```
 
 -------------------------------------------------------------------------------
 
@@ -28,14 +28,17 @@ Pour installer npm :
 
 Pour installer Node.js :
 
-```sudo dnf module install nodejs:18/common```
+```sudo dnf install nodejs```
 
 -------------------------------------------------------------------------------
 
-Si vous avez une version trop ancienne de node.js suivez les étapes de ce site
-pour avoir la dernière version.
+Pour update Nodejs :
 
-https://phoenixnap.com/kb/update-node-js-version
+```sudo npm install -g n```
+
+```sudo n stable```
+
+```sudo n latest```
 
 -------------------------------------------------------------------------------
 
