@@ -384,6 +384,7 @@ vers les bons chemins.
 votre toolbar pour que vos boutons appellent ces fonctions.
 
 Une fois, cela fait votre système de routing est en théorie fonctionnel !
+(Attentions l'odre des chemins dans votre routes.ts est important !!)
 
 # Etape 5: Décoration
 
