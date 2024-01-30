@@ -1,4 +1,4 @@
-# angularWorkshop
+# Angular Workshop
 
 # Etape 0: Installation
 
