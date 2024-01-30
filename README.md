@@ -183,7 +183,7 @@ Que s'est t'il passé sur votre site ?
 
 Vous l'avez peut être compris mais app.component.ts, app.component.html et
 app.component.scss forment un component.
-Et en écrivant <app-root></app-root> dans le body on appelle ce component.
+Et en écrivant ```<app-root></app-root>``` dans le body on appelle ce component.
 C'est notre component principal et c'est depuis celui là que nous allons appeller
 nos autres component.
 
