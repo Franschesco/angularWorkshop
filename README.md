@@ -75,8 +75,10 @@ http://localhost:4200/
 
 En résumer:
 
+```ts
 ng new = créer le projet
 ng serve = lance votre site par défaut sur localhost:4200
+```
 
 # Etape 2: Component
 
@@ -93,16 +95,19 @@ Cela va permettre d'avoir un code très lisible et facilement débugable.
 
 Pour créer un component on va simplement taper la commande :
 
+```ts
 ng generate component [nom du component]
+```
 
 Dans notre cas vous pouvez écrire :
 
+```ts
 ng generate component toolbar
 ng generate component page1
 ng generate component page2
 ng generate component page3
 ng generate component page4
-
+```
 Vous remarquerez que cela à créer 5 dossiers dans src/app, qui contiennent
 chacun un fichier html, scss, ts et spec.ts.
 
@@ -115,7 +120,9 @@ Avant de véritablement commencer, il faut que vous sachiez que angular fourni
 html de manière plus concise.
 Pour télécharger ces outils il faut que vous tapiez cette commande:
 
+```
 ng add @angular/material
+```
 
 3)
 
@@ -149,7 +156,9 @@ le header classique d'un site internet (les balises ```<head></head>```)
 et le body (les balises ```<body></body>```)
 qui contient uniquement :
 
-```<app-root></app-root>```
+```ts
+  <app-root></app-root>
+```
 
 A quoi correspond cette balise ?
 
@@ -177,7 +186,9 @@ la templateurl est app.component.html et le styleUrl est app.component.scss
 Je vous invite à ouvrir app.component.html, et à littéralement tout effacer !
 Et écrivez :
 
-```<p>Bonjour Angular !</p>```
+```ts
+<p>Bonjour Angular !</p>
+```
 
 Que s'est t'il passé sur votre site ?
 
@@ -195,7 +206,9 @@ selector égal à app-toolbar.
 
 il vous reste donc à écrire dans le app.component.html
 
-```<app-toolbar></app-toolbar>```
+```ts
+<app-toolbar></app-toolbar>
+```
 
 Cela ne marche pas ? Vous avez une erreur dans le terminal ?
 C'est normal !
@@ -234,11 +247,13 @@ c'était juste pour que vous puissiez voir que c'est possible !
 Vous pouvez également sans oublier de les imports dans le app.component.ts ajoutez
 vos différentes pages:
 
-```<app-toolbar></app-toolbar>```
-```<app-page1></app-page1>```
-```<app-page2></app-page2>```
-```<app-page3></app-page3>```
-```<app-page4></app-page4>```
+```ts
+<app-toolbar></app-toolbar>
+<app-page1></app-page1>
+<app-page2></app-page2>
+<app-page3></app-page3>
+<app-page4></app-page4>
+```
 
 Normalement elles se sont toutes ajoutez les unes en-dessous des autres sur
 votre site internet.
@@ -259,10 +274,12 @@ localhost:4200
 
 Nous allons ajoutez 4 chemins:
 
+```ts
 localhost:4200/Page1     // chemin par défaut
 localhost:4200/Page2
 localhost:4200/Page3
 localhost:4200/Page4
+```
 
 Concrètement nous allons faire en sorte que dès que notre utilisateur va arriver sur
 notre site, Il sera automatiquement diriger vers localhost:4200/Page1.
@@ -300,16 +317,20 @@ Je vous invite à le faire pour vos 4 pages !
 
 Une fois les 4 pages ajoutez vous pouvez ajoutez également ces deux chemin :
 
+```ts
 {
   path: '', redirectTo: 'Page1', pathMatch: 'full'
 },
+```
 
 Ce chemin est une gestion d'erreur pour quand l'utilisateur arrive au début
 sur localhost:4200/ il soit diriger vers localhost:4200/Page1
 
+```ts
 {
   path: '**', redirectTo: 'Page1'
 },
+```
 
 Ce chemin est aussi une gestion d'erreur pour que si l'utilisateur essaie de
 mettre un chemin qui n'existe pas ex: localhost:4200/flashmcqueen il soit
@@ -320,8 +341,10 @@ Bonne nouvelle ! Votre router est prêt !
 Vous avez maintenant simplement à l'ajoutez en dessous de ```<app-toolbar></app-toolbar>```
 votre fichier devrait ressembler à ceci:
 
-```<app-toolbar></app-toolbar>```
-```<router-outlet></router-outlet>```
+```ts
+<app-toolbar></app-toolbar>
+<router-outlet></router-outlet>
+```
 
 Normalement, vous devriez avoir un site avec votre toolbar et votre component
 page1 en dessous. Les boutons de la toolbar ne marchent pas encore, pas de panique
@@ -330,7 +353,7 @@ on y arrive !
 # Etape 4: Redirection
 
 L'objectif désormais est de rentre les boutons de notre toolbar fonctionnel.
-Pour qu'il redirige vers les bons chemins notre site internent.
+Pour qu'ils redirigent vers les bons chemins de notre site.
 
 Dans le .ts de mon component toolbar qui se trouve dans ce repo git. Vous
 pouvez désormais copier tout ce qui est commenté // étape 4.
@@ -359,4 +382,5 @@ il n'y a pas mieux !
 
 https://material.angular.io/components/categories
 
-Pourquoi ne pas ajouter un component footer en bas de votre site ?
+Pourquoi ne pas ajouter un component footer qui pourrait fonctionner comme 
+la toolbar en bas de votre site ?
