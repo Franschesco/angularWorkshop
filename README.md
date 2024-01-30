@@ -195,7 +195,7 @@ selector égal à app-toolbar.
 
 il vous reste donc à écrire dans le app.component.html
 
-```<app-toolbar></app-toobar>```
+```<app-toolbar></app-toolbar>```
 
 Cela ne marche pas ? Vous avez une erreur dans le terminal ?
 C'est normal !
