@@ -131,11 +131,13 @@ ng add @angular/material
 
 3)
 
-Dans ce dossier github je vous ai fourni mon component toolbar, vous pouvez
-copier l'html et le scss dans votre component toolbar. Ce n'est pas forcément
-important si vous ne comprenez pas pour le moment ce qu'il y a écrit
-dans ces deux fichiers, ils ne sont pas essentiels pour comprendre
-la logique globale du projet.
+Dans ce dossier github (celui dans lequel se trouve ce readme)
+je vous ai fourni mon component toolbar. Vous pouvez copier l'html et le scss
+de mon component toolbar dans votre component toolbar.
+
+Ce n'est pas forcément important si vous ne comprenez pas pour le
+moment ce qu'il y a écrit dans ces deux fichiers, ils ne sont pas essentiels
+pour comprendre la logique globale du projet.
 
 Il vous faudra également copier quelques éléments (qui sont commenté // etape 2)
 de mon fichier ts, ne faites pas un copier coller de l'intégralité de ce
@@ -157,7 +159,9 @@ un index.html, qui correspond au début du site.
 
 En Angular ce fichier se trouve dans src/index.html
 
-Ouvrez-le, et vous remarquerez que ce fichier est composé de deux parties,
+OUVREZ LE !
+
+Vous remarquerez que ce fichier est composé de deux parties,
 le header classique d'un site internet (les balises ```<head></head>```)
 et le body (les balises ```<body></body>```)
 qui contient uniquement :
@@ -372,8 +376,8 @@ dans la class ToolbarComponent.
 
 Ce constructeur crée une variable router qui est import depuis @angular/router
 
-Ensuite, dans cette class, nous créons 4 fonctions, qui vont être appelées
-par nos 4 boutons. Ces fonctions vont être utilisées router pour naviguer
+Ensuite, dans cette class, nous avons 4 fonctions, qui vont être appelées
+par nos 4 boutons. Ces fonctions vont être utilisées pour naviguer
 vers les bons chemins.
 
 À vous de jouer désormais pour trouver ce qu'il faut modifier dans le html de
