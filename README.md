@@ -130,7 +130,7 @@ ng add @angular/material
 
 Dans ce dossier github je vous ai fourni mon component toolbar, vous pouvez
 copier l'html et le scss dans votre component toolbar. Cela n'est pas forcèment,
-important si vous ne comprenez pas pour le momoent ce qu'il y a écrit
+important si vous ne comprenez pas pour le moment ce qu'il y a écrit
 dans ces deux fichiers, ils ne sont pas essentiels pour comprendre
 la logique globale du projet.
 
@@ -142,7 +142,8 @@ Si vous vous demandez si il y a des choses à copier du fichier spec.ts
 sachez que ce fichier n'est jamais à modifié et ne se modifie quasiment
 jamais peu importe le projet angular !
 
-Si vous avez bien suivi, sachez que votre component toolbar est prêt !
+Si vous avez bien suivi et qu'il n'a pas d'erreur dans le terminal, sachez que
+votre component toolbar est prêt !
 
 Il vous faut maintenant l'intégrer à votre site !
 
@@ -206,7 +207,7 @@ En théorie si vous ouvrez le .ts de votre component toolbar
 vous pouvez trouvez exactement la même chose que dans app.component.ts avec un
 selector égal à app-toolbar.
 
-il vous reste donc à écrire dans le app.component.html
+Pour voir votre toolbar sur votre site, il vous reste donc à écrire dans le app.component.html
 
 ```ts
 <app-toolbar></app-toolbar>
@@ -356,7 +357,7 @@ on y arrive !
 
 # Etape 4: Redirection
 
-L'objectif désormais est de rentre les boutons de notre toolbar fonctionnel.
+L'objectif désormais est de rendre les boutons de notre toolbar fonctionnel.
 Pour qu'ils redirigent vers les bons chemins de notre site.
 
 Dans le .ts de mon component toolbar qui se trouve dans ce repo git. Vous
@@ -386,5 +387,9 @@ il n'y a pas mieux !
 
 https://material.angular.io/components/categories
 
-Pourquoi ne pas ajouter un component footer qui pourrait fonctionner comme 
+Pourquoi ne pas ajouter un component footer qui pourrait fonctionner comme
 la toolbar en bas de votre site ?
+
+Si vous n'avez jamais utilisez GitHubPages pourquoi ne pas essayer de
+mettre ce site sur GitHubPages ?
+
