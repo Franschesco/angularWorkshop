@@ -219,11 +219,13 @@ Désormais sur votre site vous êtes sensé voir votre toolbar.
 
 Vous pouvez vous amusez à mettre plusieurs ```<app-toolbar></app-toolbar>```
 
-```<app-toolbar></app-toolbar>```
-```<app-toolbar></app-toolbar>```
-```<app-toolbar></app-toolbar>```
-```<app-toolbar></app-toolbar>```
-```<app-toolbar></app-toolbar>```
+```ts
+  <app-toolbar></app-toolbar>
+  <app-toolbar></app-toolbar>
+  <app-toolbar></app-toolbar>
+  <app-toolbar></app-toolbar>
+  <app-toolbar></app-toolbar>
+```
 
 Vous comprenez maintenant que cela permet de réduire grandement l'écriture
 et d'avoir un code très lisible, évidemment laissez juste une toolbar
