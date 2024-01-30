@@ -6,29 +6,29 @@
 
 Pour installer Angular, vous aurez besoin d'avoir Node.js et npm (gestionnaire de paquets Node) installés sur votre ordinateur. Une fois que ces prérequis sont installés, vous pouvez utiliser npm pour installer Angular en utilisant la commande suivante :
 
-npm install -g @angular/cli
+```npm install -g @angular/cli```
 
 -------------------------------------------------------------------------------
 
 Pour savoir si Node.js est installé :
 
-node -v
+```node -v```
 
 Pour savoir si npm est installé :
 
-npm -v
+```npm -v```
 
 -------------------------------------------------------------------------------
 
 Pour installer npm :
 
-sudo dnf install npm
+```sudo dnf install npm```
 
 -------------------------------------------------------------------------------
 
 Pour installer Node.js :
 
-sudo dnf module install nodejs:18/common
+```sudo dnf module install nodejs:18/common```
 
 -------------------------------------------------------------------------------
 
@@ -53,7 +53,7 @@ site web !
 
 Tapez dans le terminal au root de votre dossier :
 
-ng new mon-projet
+```ng new mon-projet```
 
 Dites "yes" à tout et choissisez "scss"
 
@@ -62,15 +62,17 @@ tas de fichier et dossier tout est bon !
 
 Faites :
 
-cd mon-projet/
+```cd mon-projet/```
 
 Puis :
 
-ng serve
+```ng serve```
 
 Désormais, si tout s'est bien passé, votre site tourne sur:
 
+```ts
 http://localhost:4200/
+```
 
 
 En résumer:
