@@ -83,8 +83,9 @@ ng serve = lance votre site par défaut sur localhost:4200
 Un component est un élément fondamental d'une application Angular. Un component
 est un module qui contient du code HTML, CSS et Typescript.
 
-Dans notre futur site nous aurons une toolbar sur le haut du site qui sera
-un component (chacune des pages sera aussi un component)
+Dans notre futur site nous aurons une toolbar qui permettra de naviguer
+d'une page à l'autre, elle sera sur le haut du site et elle sera un component
+(chacune des pages sera aussi un component)
 
 Cela va permettre d'avoir un code très lisible et facilement débugable.
 
@@ -143,10 +144,12 @@ un index.html, qui correspond au début du site.
 
 En angular ce fichier se trouve dans src/index.html
 
-Ce fichier est composé de deux parties, le header classique d'un site internet
-et le body qui contient uniquement :
+Ouvrez le, et vour remarquerez que ce fichier est composé de deux parties,
+le header classique d'un site internet (les balises ```<head></head>``)
+et le body (les balises ```<body></body>```)
+qui contient uniquement :
 
-<app-root></app-root>
+```<app-root></app-root>```
 
 A quoi correspond cette balise ?
 
@@ -174,7 +177,7 @@ la templateurl est app.component.html et le styleUrl est app.component.scss
 Je vous invite à ouvrir app.component.html, et à littéralement tout effacer !
 Et écrivez :
 
-<p>Bonjour Angular !</p>
+```<p>Bonjour Angular !</p>```
 
 Que s'est t'il passé sur votre site ?
 
@@ -192,7 +195,7 @@ selector égal à app-toolbar.
 
 il vous reste donc à écrire dans le app.component.html
 
-<app-toolbar></app-toobar>
+```<app-toolbar></app-toobar>```
 
 Cela ne marche pas ? Vous avez une erreur dans le terminal ?
 C'est normal !
@@ -216,11 +219,11 @@ Désormais sur votre site vous êtes sensé voir votre toolbar.
 
 Vous pouvez vous amusez à mettre plusieurs <app-toolbar></app-toolbar>
 
-<app-toolbar></app-toolbar>
-<app-toolbar></app-toolbar>
-<app-toolbar></app-toolbar>
-<app-toolbar></app-toolbar>
-<app-toolbar></app-toolbar>
+```<app-toolbar></app-toolbar>```
+```<app-toolbar></app-toolbar>```
+```<app-toolbar></app-toolbar>```
+```<app-toolbar></app-toolbar>```
+```<app-toolbar></app-toolbar>```
 
 Vous comprenez maintenant que cela permet de réduire grandement l'écriture
 et d'avoir un code très lisible, évidemment laissez juste une toolbar
@@ -229,11 +232,11 @@ c'était juste pour que vous puissiez voir que c'est possible !
 Vous pouvez également sans oublier de les imports dans le app.component.ts ajoutez
 vos différentes pages:
 
-<app-toolbar></app-toolbar>
-<app-page1></app-page1>
-<app-page2></app-page2>
-<app-page3></app-page3>
-<app-page4></app-page4>
+```<app-toolbar></app-toolbar>```
+```<app-page1></app-page1>```
+```<app-page2></app-page2>```
+```<app-page3></app-page3>```
+```<app-page4></app-page4>```
 
 Normalement elles se sont toutes ajoutez les unes en-dessous des autres sur
 votre site internet.
@@ -312,11 +315,11 @@ diriger vers localhost:4200/Page1
 
 Bonne nouvelle ! Votre router est prêt !
 
-Vous avez maintenant simplement à l'ajoutez en dessous de <app-toolbar></app-toolbar>
+Vous avez maintenant simplement à l'ajoutez en dessous de ```<app-toolbar></app-toolbar>```
 votre fichier devrait ressembler à ceci:
 
-<app-toolbar></app-toolbar>
-<router-outlet></router-outlet>
+```<app-toolbar></app-toolbar>```
+```<router-outlet></router-outlet>```
 
 Normalement, vous devriez avoir un site avec votre toolbar et votre component
 page1 en dessous. Les boutons de la toolbar ne marchent pas encore, pas de panique
