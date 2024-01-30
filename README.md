@@ -145,7 +145,7 @@ un index.html, qui correspond au début du site.
 En angular ce fichier se trouve dans src/index.html
 
 Ouvrez le, et vour remarquerez que ce fichier est composé de deux parties,
-le header classique d'un site internet (les balises ```<head></head>``)
+le header classique d'un site internet (les balises ```<head></head>```)
 et le body (les balises ```<body></body>```)
 qui contient uniquement :
 
@@ -217,7 +217,7 @@ et dans le imports
 
 Désormais sur votre site vous êtes sensé voir votre toolbar.
 
-Vous pouvez vous amusez à mettre plusieurs <app-toolbar></app-toolbar>
+Vous pouvez vous amusez à mettre plusieurs ```<app-toolbar></app-toolbar>```
 
 ```<app-toolbar></app-toolbar>```
 ```<app-toolbar></app-toolbar>```
