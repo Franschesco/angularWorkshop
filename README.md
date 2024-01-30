@@ -215,7 +215,9 @@ C'est normal !
 
 Il faut que vous ajoutiez dans le app.component.ts
 
+```ts
 import { ToolbarComponent } from './toolbar/toolbar.component';
+```
 
 et dans le imports
 
