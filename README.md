@@ -190,7 +190,7 @@ Ouvrez le fichier src/app/app.component.ts
 ```
 
 Vous pouvez voir que le selector est app-root (cela ne vous rappelle pas quelque chose ?)
-la templateurl est app.component.html et le styleUrl est app.component.scss
+la templateUrl est app.component.html et le styleUrl est app.component.scss
 
 Je vous invite à ouvrir app.component.html, et à littéralement tout effacer !
 Et écrivez :
