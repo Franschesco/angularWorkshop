@@ -1,0 +1,10 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+
+    .bouton_div {
+        display: flex;
+        gap: 5vw;
+        margin-right: 10vw;
+    }
+}
